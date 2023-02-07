@@ -1,0 +1,507 @@
+<html>
+    <head>
+        <title>tracker</title>
+        <link rel="stylesheet" 
+        href="tr.css">
+    </head>
+    <body>
+        <h1>track your order</h1>
+    <div>
+         <form>  
+             &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="choose one id"
+          id="choose one id">
+         &nbsp;
+         <spam id="mobile no">mobile number</spam>
+         &nbsp;&nbsp;&nbsp;
+         <br>
+          &nbsp; &nbsp;
+         <input type ="radio" name="choose one id"
+         id="choose one id">
+         &nbsp;
+          <spam id="tracking id">tracking id</spam>
+          &nbsp;
+         <br>
+         &nbsp;&nbsp;
+         <input type ="radio" name="choose one id"
+         id="choose one id">
+         &nbsp;
+         <spam id="tracking id">order id/ref id</spam>
+          &nbsp;
+           <br>
+           &nbsp;
+           <input type="text" name="text type" placeholder="type text here">
+           <br>
+            &nbsp;
+           <input type="submit" value="submit"
+           name="submit" id="submit">
+        </form>
+      </div><!--end main-->
+    </body>
+</html>
+><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA compitable" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="index.css " href="index.js" href="">
+  </head>
+ <body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+            <h class="logo">dakvehicle</h1>
+            </div>
+
+              <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="track/track.HTML">SERVICE</a></li>
+                    <li><a href="#">INVESTERS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+              </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Web Design for<br><span>transport</span> <br>development</h1>
+            <p class="par">welcome india with new transport community and we are the future of 
+                indian transport community <br>  this project handled by bhanu,aditya,akansha
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(istockphoto-1255745297-612x612.jpg);
+  background-image: none,url(istockphoto-1255745297-612x612.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+@keyframes image{
+0%{
+  transform: translateY(0);
+  opacity: 0;
+}
+50%{
+  opacity: 1;
+}
+70%{
+  opacity: 1;
+}
+100%{
+  transform: translateY(-80vh);
+  opacity: 0;
+ }
+}
+.images imp:nth-child(1){
+  animation-delay: 2s;
+  width: 25px;
+}
+
+.navbar{
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon{
+  
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo{
+  color: #458312;
+  font-size: 35px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 5px
+}
+
+.menu{
+  color: rgb(26, 176, 218);
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition:0.4s  ease-in-out;
+}
+
+ul li a:hover{
+  color: 
+  #c6631c;
+}
+
+.search{
+  width: 330px;
+  float: left;
+  margin-left: 270px;
+}
+
+.srch{
+  font-family: 'Times New Roman';
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ff7200;
+  margin-top: 13px;
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  background: #33ff00;
+  border: 2px solid #ea7338;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.btn:hover{
+  color: #000;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.srch:focus{
+
+  outline: none;
+}
+
+.content{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+}
+
+.content .par{
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.content h1{
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+
+.content .cn{
+  width: 160px;
+  height: 40px;
+  background: #09ff00;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+  
+}
+
+.content .cn a{
+  text-decoration: none;
+  color: #000;
+  transition: .3s ease;
+}
+
+.cn:hover{
+  background-color: #fff;
+}
+
+.content span{
+  color: #00ff62;
+  font-size: 65px
+}
+
+.form{
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  position: absolute;
+  top: -20px;
+  left: 870px;
+  transform: translate(0%,-5%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.form h2{
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #00ff95;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #00ff5e;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+
+.form input:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: #fff;
+  font-family: Arial;
+}
+
+.btnn{
+  width: 240px;
+  height: 40px;
+  background: #00ff37;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.btnn:hover{
+  background: #fff;
+  color: #ff7200;
+}
+.btnn a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.form .link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .link a{
+  text-decoration: none;
+  color: #ff7200;
+}
+.liw{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.icons a{
+  text-decoration: none;
+  color: rgb(175, 33, 33);
+}
+.icons ion-icon{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+  color: #798ef6;
+}
+
+@media screen and (max-width: 1200px){
+  /*normal screen*/
+
+.navbar{
+  width: 100%;
+  height: 100px;
+}
+  ul{
+  margin-left: 30px;
+    }
+  ul li{
+    margin-left: 60px;
+  }
+  ul li a{
+    font-size: 1.6vw;
+  }
+  .search{
+    margin-top: 3px;
+    margin-left: 290px;
+  }
+  .srch{
+    height: 40px;
+    width: 190px;
+    font-size: 14px;
+  }
+  .btn{
+    height: 40px;
+    width: 80px;
+  }
+  .content{
+width: 100%;
+}
+.content h1, .content span{
+  font-size: 4.5vw;
+}
+.content .par{
+  width: 90%;
+  font-size: 1.5vw ;
+}
+.content .cn{
+  width: 13%;
+  height: 3.5vw;
+  font-size: 1.8vw;
+}
+.content a{
+  font-size: 1.6vw;
+}
+@media screen and (max-width: 1170px){
+  /*login box*/
+  
+}
+  .main{
+  padding-left: 20px;
+   height: 180vh;
+  }
+  .form{
+    margin: left -30px;
+    width: 250px;
+    height: 370px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 420px;
+    left: 50px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+  }
+  .form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+  }
+  .btnn a{
+    font-size: 16px;
+   }
+  .form .link a{
+    font-size: 16px;
+   }
+
+}  
+@media screen and (max-width: 600px){
+  /*IPAD*/
+  
+  .content{
+      margin-top: 80px;
+      margin-left: 20px;
+  }
+  .search{
+      margin-top: -40px;
+      margin-left: 42px;
+  }
+  .logo{
+      margin-left: 180px;
+      font-size: 4vw;
+  }
+  ul{
+      margin-top: -25px;
+      margin-left: -5px;
+  }
+  ul li {
+      margin-left: 50px;
+  }
+  ul li a{
+      font-size: 2vw;
+  }   
+}
+
+@media screen and (max-width: 450px){
+  /*mobile*/
+  .logo{
+      margin-left: 140px;
+      font-size: 4vw;
+  }
+  ul{
+      margin-top: -25px;
+  }
+  ul li {
+      margin-left: 42px;
+  }
+  ul li a{
+      font-size: 2vw;
+  }  
+  .search{
+      margin-top: -40px;
+      margin-left: 38px;
+  } 
+
+}
